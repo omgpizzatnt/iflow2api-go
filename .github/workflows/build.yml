@@ -117,7 +117,9 @@ jobs:
             echo "is_prerelease=false" >> $GITHUB_OUTPUT
             echo "title=Release ${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
           else
-            SHORT_SHA=$(git rev-parse --short HEAD)
+            # No .git available in some runner contexts (e.g. after download-artifact).
+            # Use the supplied GITHUB_SHA to derive a short commit id instead of running git.
+            SHORT_SHA=${GITHUB_SHA:0:7}
             echo "release_tag=dev-${SHORT_SHA}" >> $GITHUB_OUTPUT
             echo "is_prerelease=true" >> $GITHUB_OUTPUT
             echo "title=Testing Build dev-${SHORT_SHA}" >> $GITHUB_OUTPUT
