@@ -1,6 +1,8 @@
 # iflow2api-go
 
-[![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://go.dev/)
+[English](README.md) | [简体中文](README.zh-CN.md)
+
+[![Go Version](https://img.shields.io/badge/Go-1.25+-00ADD8?style=flat&logo=go)](https://go.dev/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 用 Go 编写的高性能 iFlow OpenAI 兼容 API 代理。
