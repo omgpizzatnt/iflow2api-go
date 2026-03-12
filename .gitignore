@@ -1,47 +1,44 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
 *.so
-.Python
-build/
-develop-eggs/
-dist/
-*.spec
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+*.dylib
+iflow2api
+!iflow2api/
 
-# Virtual environments
-.venv/
-venv/
-ENV/
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# Dependency directories
+vendor/
+
+# Config file with sensitive data
+config.json
+.env
 
 # IDE
-.idea/
 .vscode/
+.idea/
 *.swp
 *.swo
-
-# Claude
-.claude/
+*~
 
 # OS
 .DS_Store
 Thumbs.db
 
+# AI things
+.sisyphus/
+.claude/
+AGENTS.md
+
 # Misc
-nul
 *.log
-TODO.md
-.tmp-iflow-cli
-tests/
+.nul
